@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WhatsApp Clone</title>
+
+   <!-- Vue -->
+
+   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+   <!-- Stylesheets -->
+
+   <link rel="stylesheet" href="css/style.css">
+   <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+   
+   <!-- Axios -->
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+   <div class="container">
+      <div class="sidebar">
+         <header>
+               <h2>Chat</h2>
+         </header>
+         <div class="chat-list">
+               <div class="chat">
+                  <div class="chat-info">
+                     <h3>Contatto 1</h3>
+                     <p>Ultimo messaggio</p>
+                  </div>
+               </div>
+         </div>
+      </div>
+      <div class="chat-window">
+         <header>
+               <h2>Contatto 1</h2>
+               <span> ultimo accesso/online </span>
+         </header>
+         <div class="messages">
+               <div class="message received">
+                  <p>Ciao! Come stai?</p>
+               </div>
+               <div class="message sent">
+                  <p>Bene, grazie! E tu?</p>
+               </div>
+               <!-- Aggiungi più messaggi qui -->
+         </div>
+         <div class="message-input">
+               <input type="text" placeholder="Scrivi un messaggio" id="messageInput">
+               <button onclick="sendMessage()">Invia</button>
+         </div>
+      </div>
+   </div>
+
+   <!-- logic script -->
+
+   <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
