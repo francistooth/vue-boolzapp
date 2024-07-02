@@ -19,7 +19,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-   <div class="container">
+   <div id="app" class="container">
       <div class="sidebar">
          <header>
                <h2>Chat</h2>
@@ -27,7 +27,8 @@
          <div class="chat-list">
                <div class="chat">
                   <div class="chat-info">
-                     <h3>Contatto 1</h3>
+                     <img :src="contacts[0].avatar " alt="">
+                     <h3> {{ contacts[0].name }} </h3>
                      <p>Ultimo messaggio</p>
                   </div>
                </div>

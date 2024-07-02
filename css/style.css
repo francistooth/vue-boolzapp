@@ -3,13 +3,13 @@ body {
    margin: 0;
    display: flex;
    height: 100vh;
-   background-color: #ece5dd;
+   background-color: #dadbd3;
 }
 
 .container {
    display: flex;
-   width: 98%;
-   height: 98%;
+   width: 85%;
+   height: 90%;
    margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .sidebar header {
-   padding: 20px;
+   height: 10%;
    background-color: #075E54;
    color: white;
    text-align: center;
@@ -34,7 +34,7 @@ body {
 }
 
 .chat {
-   padding: 15px;
+   padding: 10px 15px;
    border-bottom: 1px solid #ccc;
    cursor: pointer;
 }
@@ -55,7 +55,7 @@ body {
 }
 
 .chat-window header {
-   padding: 20px;
+   height: 10%;
    background-color: #075E54;
    color: white;
    text-align: center;
