@@ -27,7 +27,7 @@
          <div class="chat-list">
                <div class="chat">
                   <div v-for="(contact, index) in contacts" :key="index" class="chat-info">
-                     <img :src="contacts[index].avatar" alt="">
+                     <img class="chat-img" :src="contacts[index].avatar" alt="">
                      <h3> {{ contacts[index].name }} </h3>
                      <p> ultimo messaggio </p>
                   </div>
