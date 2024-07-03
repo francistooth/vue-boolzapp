@@ -26,10 +26,10 @@
          </header>
          <div class="chat-list">
                <div class="chat">
-                  <div class="chat-info">
-                     <img :src="contacts[0].avatar " alt="">
-                     <h3> {{ contacts[0].name }} </h3>
-                     <p>Ultimo messaggio</p>
+                  <div v-for="(contact, index) in contacts" :key="index" class="chat-info">
+                     <img :src="contacts[index].avatar" alt="">
+                     <h3> {{ contacts[index].name }} </h3>
+                     <p> ultimo messaggio </p>
                   </div>
                </div>
          </div>
